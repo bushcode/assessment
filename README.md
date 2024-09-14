@@ -1,6 +1,6 @@
 # Metaversal frontend assessment project.
 
-Project implements a social media feed and user profile pages using provided [design files](https://www.figma.com/design/yKiOqBqcJVCuG42i6tmrkM/Front-End-Dev-Test?node-id=1133-16284&t=uJGmBShEkUrtbBrm-1), [dummyjson posts](https://www.dummyjson.com/docs/posts) and [dummyjson users](https://www.dummyjson.com/docs/users) APIs. Built with Next JS 14 and Tailwind CSS it implements both Static and Server Side Rendering techniques.
+Project implements a social media feed and user profile pages using provided [design files](https://www.figma.com/design/yKiOqBqcJVCuG42i6tmrkM/Front-End-Dev-Test?node-id=1133-16284&t=uJGmBShEkUrtbBrm-1), [dummyjson posts](https://www.dummyjson.com/docs/posts) and [dummyjson users](https://www.dummyjson.com/docs/users) APIs. Built with Next JS 14 and Tailwind CSS it implements both Static and Server Side Rendering techniques. Project is deployed on [Netlify](https://cerulean-croquembouche-d981f8.netlify.app/)
 
 ## Running Project Locally
 
@@ -41,50 +41,3 @@ Data fetching is implemented in the /app/lib/data.ts file. The file contains all
 - fetchTopPosts - fetches all posts, sorts posts by likes in descending order, adds user data to post data and returns posts with most likes
 - fetchUserPostsById - fetches a user's posts by id with limit for pagination
 - fetchtUserStats - fetches every post for a user and calculate total likes and total posts
-
-## Folder Structure
-
-```
-└── 📁app
-    └── 📁assets
-        └── avatar.png
-    └── 📁components
-        └── 📁ui
-            └── Avatar.tsx
-            └── Button.tsx
-            └── Card.tsx
-            └── DepartmentTag.tsx
-            └── ErrorBoundary.tsx
-            └── Icons.tsx
-            └── Navbar.tsx
-            └── PostCard.tsx
-            └── PostCardSkeleton.tsx
-            └── PostStats.tsx
-            └── ProfileCardSkeleton.tsx
-            └── Tag.tsx
-            └── UserCardSkeleton.tsx
-            └── UserProfileCard.tsx
-        └── InfiniteScroll.tsx
-        └── RecentPosts.tsx
-        └── SuggestedPosts.tsx
-        └── UserData.tsx
-        └── WhoToFollow.tsx
-    └── 📁hooks
-        └── use-icon-click.ts
-    └── 📁lib
-        └── data.ts
-        └── utils.ts
-    └── 📁profile
-        └── 📁[userId]
-            └── loading.tsx
-            └── not-found.tsx
-            └── page.tsx
-        └── error.tsx
-        └── layout.tsx
-    └── favicon.ico
-    └── globals.css
-    └── layout.tsx
-    └── loading.tsx
-    └── not-found.tsx
-    └── page.tsx
-```

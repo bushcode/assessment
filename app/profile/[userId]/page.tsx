@@ -3,7 +3,7 @@ import { fetchUserPostsById, fetchUserById, fetchtUserStats } from "@lib/data";
 import InfiniteScroll from "@components/InfiniteScroll";
 import UserProfileCard from "@ui/UserProfileCard";
 import ErrorBoundary from "@ui/ErrorBoundary";
-import Loading from "./loading";
+import Loading from "../loading";
 
 export default async function Page({ params }: { params: { userId: string } }) {
   const userId = Number(params.userId);
