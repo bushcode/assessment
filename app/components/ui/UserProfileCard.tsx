@@ -59,7 +59,7 @@ function UserProfileCard({
           </div>
         </div>
       </div>
-      <div className="flex p-4 space-x-3 bg-light-profile-card-gradient sm:justify-start justify-center">
+      <div className="flex p-4 space-x-3 bg-light-profile-card-gradient sm:justify-start justify-center rounded-b-2xl">
         <Button intent="gradient" size="default">
           Follow
         </Button>
