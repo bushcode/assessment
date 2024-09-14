@@ -2,26 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    --content-base: 180, 9%, 98%, 1;
+    --nav-border: 0, 0%, 87%, 1;
+    --border-light: 195, 8%, 90%, 1;
+    --text-primary: 210, 29%, 11%, 1;
+    --text-secondary: 201, 10%, 40%, 1;
+    --primary: 250, 70%, 50%, 1;
+    --purple: 250, 70%, 40%, 1;
+    --light-purple: 250, 69%, 90%, 1;
+    --crayola: 349, 78%, 40%, 1;
+    --light-crayola: 348, 77%, 95%, 1;
+    --blue-primary: 205, 100%, 40%, 1;
+    --light-blue: 205, 100%, 95%, 1;
+    --mandarin: 17, 88%, 40%, 1;
+    --light-mandarin: 16, 85%, 95%, 1;
+    --turquoise: 180, 70%, 40%, 1;
+    --light-turquoise: 180, 69%, 95%, 1;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    --shadow-light: 0, 0%, 10%, 0.08;
+
+    --button-gradient: linear-gradient(
+      180deg,
+      hsla(333, 100%, 50%, 1) -100%,
+      hsla(279, 75%, 41%, 1) 29%,
+      hsla(250, 70%, 50%, 1) 100%
+    );
+
+    --button-hover-gradient: linear-gradient(
+      180deg,
+      hsla(333, 100%, 50%, 1) -14%,
+      hsla(279, 75%, 41%, 1) 69%,
+      hsla(250, 70%, 50%, 1) 100%
+    );
+
+    --skeleton-gradient: linear-gradient(
+      139.485deg,
+      #ebedee 15%,
+      #f9fafa 25%,
+      #ebedee 40%
+    );
+
+    --profile-card-gradient: linear-gradient(
+      102.782deg,
+      #ece9fb 0%,
+      #fdede7 100%
+    );
+    --light-profile-card-gradient: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fffaf5 100%
+    );
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-secondary;
+  }
+}
+
+.shine-box {
+  background: #f9fafa;
+  background: var(--skeleton-gradient);
+  background-size: 500px 100%;
+  background-position-x: -500px;
+  animation: shine 1.3s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: 0;
   }
 }
