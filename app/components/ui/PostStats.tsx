@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  LikeIconWithText,
-  ShareIconWithText,
-  ViewIconWithText,
-} from "@ui/Icons";
+import { LikeIconWithText, ShareIconWithText, ViewIconWithText } from "@ui/Icons";
 
 interface PostStatsProps {
   likes: number;

@@ -10,10 +10,7 @@ async function WhoToFollow() {
     return (
       <section className="flex flex-col gap-y-4">
         <h3 className="text-xl text-primary font-bold">Who to Follow</h3>
-        <ErrorBoundary
-          title="Error Loading Posts"
-          description="We’re so sorry but it’s for the test."
-        />
+        <ErrorBoundary title="Error Loading Posts" description="We’re so sorry but it’s for the test." />
       </section>
     );
   }

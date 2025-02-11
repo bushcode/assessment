@@ -1,6 +1,6 @@
-# Metaversal frontend assessment project.
+# Social Media Feed
 
-Project implements a social media feed and user profile pages using provided [design files](https://www.figma.com/design/yKiOqBqcJVCuG42i6tmrkM/Front-End-Dev-Test?node-id=1133-16284&t=uJGmBShEkUrtbBrm-1), [dummyjson posts](https://www.dummyjson.com/docs/posts) and [dummyjson users](https://www.dummyjson.com/docs/users) APIs. Built with Next JS 14 and Tailwind CSS it implements both Static and Server Side Rendering techniques. Project is deployed on [Netlify](https://cerulean-croquembouche-d981f8.netlify.app/)
+Project implements a social media feed and user profile pages using [dummyjson posts](https://www.dummyjson.com/docs/posts) and [dummyjson users](https://www.dummyjson.com/docs/users) APIs. Built with Next JS 14 and Tailwind CSS it implements both Static and Server Side Rendering techniques. Project is deployed on [Netlify](https://cerulean-croquembouche-d981f8.netlify.app/)
 
 ## Running Project Locally
 

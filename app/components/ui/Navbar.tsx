@@ -10,16 +10,10 @@ interface NavbarProps {
 }
 function Navbar({ title, backButton }: NavbarProps) {
   return (
-    <header className="w-full bg-white border-b-nav border-b h-14 shadow-light ">
+    <header className="w-full bg-white border-b-nav border-b h-14 shadow-light">
       <div className="container flex justify-center items-center h-full relative">
         {backButton && (
-          <Link
-            href="/"
-            className={cn(
-              buttonVariants({ intent: "ghost" }),
-              "absolute left-4 top-3 w-8 h-8"
-            )}
-          >
+          <Link href="/" className={cn(buttonVariants({ intent: "ghost" }), "absolute left-4 top-3 w-8 h-8")}>
             <BackIcon size="sm" />
           </Link>
         )}
